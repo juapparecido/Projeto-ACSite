@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/mediaqueries.css">
+    <script src="../scripts/script.js" defer></script>
+    <title>Matemática da Computação Quântica</title>
+</head>
+
+<body>
+
+    <header class="page-title">
+        <h1>Computação Quântica</h1>
+        <h2>Matemática da Computação Quântica</h2>
+    </header>
+
+    <nav class="navbar-menu">
+        <span class="icon" id="hamb-icon"><img id="hamb" src="../img/icons/menu-hamb-white.png" alt="menu-hamb-white"
+                onclick="dropdownMenu()"></span>
+        <span class="icon" id="close-icon"><img id="close" src="../img/icons/menu-close-white.png"
+                alt="menu-close-white" onclick="dropdownMenu()"></span>
+        <ul id="menu">
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="pag1.html">Sobre a Computação Quântica</a></li>
+            <li><a href="pag2.html">Como Ingressar</a></li>
+            <li><a href="pag3.html">Aplicações Práticas</a></li>
+            <li><a href="pag4.html">Desafios e Oportunidades</a></li>
+            <li><a href="pag5.html">Matemática da Computação Quântica</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content-container">
+
+        <section class="main-content-section">
+
+            <h3 id="sec1">Entendendo a Matemática por Trás da Computação Quântica</h3>
+
+            <p>
+                A Álgebra linear é a linguagem da computação quântica. Embora você não precise conhecê-la para
+                implementar ou escrever programas quânticos, ela é amplamente usado para descrever estados qubit,
+                operações quânticas e para prever o que um computador quântico faz em resposta a uma sequência de
+                instruções.
+            </p>
+
+            <p>
+                Quando estamos nos referindo a Álgebra Linear, estamos falando sobre Vetores e Matrizes da matemática,
+                tudo isso sendo aplicada na computação quântica.
+                Um qubit pode estar em um estado de 1 ou 0 ou em uma superposição de ambos. Usando álgebra linear, o
+                estado
+                de um qubit é descrito como um vetor e é representado por uma única matriz de coluna <span><img
+                        src="../img/content-img/math1.jpg" alt="math1"></span>. Também é conhecido
+                como um vetor de
+                estado quântico e deve atender ao requisito de que <span><img src="../img/content-img/math2.jpg"
+                        alt="math2"></span>.
+            </p>
+
+            <p>
+                Os elementos da matriz representam a probabilidade de o qubit entrar em colapso de uma forma ou de
+                outra, com <span><img src="../img/content-img/math3.jpg" alt="math3"></span> sendo a probabilidade de
+                colapsar para zero, e <span><img src="../img/content-img/math4.jpg" alt="math4"></span> sendo a
+                probabilidade de colapsar para um. Todas as matrizes a seguir representam vetores de estado quântico
+                válidos:
+            <div style="text-align: center;"><img src="../img/content-img/math5.jpg" alt="math5"></div>
+            </p>
+
+            <iframe class="size-iframe" width="560" height="315"
+                src="https://www.youtube.com/embed/wdIea5uGMW0?si=fg2zR0UsNjU2NXfe" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <hr>
+
+            <h3 id="sec2">O Algoritmo Quântico</h3>
+
+            <h4>O que é um qubit?</h4>
+
+            <p>
+                Um qubit é a unidade básica de informação na computação quântica. Os Qubits desempenham um papel
+                semelhante na computação quântica que os bits desempenham na computação clássica, mas se comportam de
+                maneira muito diferente. Os bits clássicos são binários e podem manter apenas uma posição de 0 ou 1,
+                mas,
+                os qubits podem manter uma superposição de todos os estados possíveis.
+            </p>
+
+            <img class="size-img" src="../img/content-img/quantum-algorithm.png" alt="quantum-algorithm">
+
+            <p>
+                Os cientistas podem aproveitar a interferência criando uma sequência determinística de portas qubit.
+                Essas portas qubit fazem com que as amplitudes se somem construtivamente. Isso significa que eles têm
+                garantia matemática de aumentar a probabilidade de ver uma das respostas certas.
+            </p>
+
+            <h4>Sobreposição</h4>
+
+            <p>
+                Na superposição, as partículas quânticas são uma combinação de todos os estados
+                possíveis. Eles flutuam até serem observados e medidos. Uma maneira de imaginar
+                a diferença entre posição binária e superposição é imaginar uma moeda. Os bits
+                clássicos são medidos "jogando a moeda" e obtendo cara ou coroa. No entanto, se
+                você pudesse olhar para uma moeda e ver cara e coroa ao mesmo tempo, bem
+                como todos os estados intermediários, a moeda estaria em superposição.
+            </p>
+
+            <img class="size-img" src="../img/content-img/quantum_superposition.png" alt="quantum_superposition">
+
+            <h4>Emaranhamento</h4>
+
+            <p>
+                Emaranhamento é a capacidade das partículas quânticas de correlacionar seus
+                resultados de medição entre si. Quando os qubits estão emaranhados, eles formam
+                um único sistema e influenciam uns aos outros. Podemos usar as medições de um
+                qubit para tirar conclusões sobre os outros. Ao adicionar e emaranhar mais qubits
+                em um sistema, os computadores quânticos podem calcular exponencialmente mais
+                informações e resolver problemas mais complicados.
+            </p>
+
+            <img class="size-img" src="../img/content-img/quantum_entanglement.png" alt="quantum_entanglement">
+
+            <h4>Interferência Quântica</h4>
+
+            <p>
+                Interferência quântica é o comportamento intrínseco de um qubit, devido à
+                superposição, para influenciar a probabilidade de ele entrar em colapso de uma
+                forma ou de outra. Os computadores quânticos são projetados e construídos para
+                reduzir ao máximo a interferência e garantir resultados mais precisos. Para tanto, a
+                Microsoft utiliza qubits topológicos, que são estabilizados manipulando sua estrutura
+                e envolvendo-os com compostos químicos que os protegem de interferências externas.
+            </p>
+
+            <img class="size-img" src="../img/content-img/quantum_interference.png" alt="quantum_interference">
+
+            <iframe class="size-iframe" width=" 560" height="315"
+                src="https://www.youtube.com/embed/jHoEjvuPoB8?si=7SUkmFEq7QGhYldY" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <hr>
+
+            <h3 id="sec3">Como Utilizar um Algoritmo Quântico na Prática</h3>
+
+            <p>
+                Para fazermos essa experiência, iremos usar o <strong><a href="https://colab.new/"
+                        target="_blank">Google
+                        Collab</a></strong>, que é um serviço Jupyter Notebook hospedado que não requer configuração
+                para uso e fornece acesso gratuito a recursos de computação, incluindo GPUs e TPUs.
+                Nesta primeira experiência, iremos fazer o famoso "Hello World", que é tradicionalmente usado para
+                apresentar programadores novatos a uma linguagem de programação, mas, dessa vez, faremos isso na maneira
+                "quântica".
+            </p>
+
+            <p>
+                Primeiramente, para fazermos o nosso programa temos que construir e executar circuitos quânticos.
+                Circuitos quânticos são uma sequência de portas quânticas, e esses circuitos são referidos como "um
+                registro n-qubit". Para isso, iremos usar dois comandos:
+            </p>
+
+            <img class="size-img-collab" src="../img/content-img/pip-install-libs.jpg" alt="pip install">
+
+            <p>
+                A próxima coisa que faremos é começar a construir o registro quântico. Teremos que primeiro codificar a
+                entrada, fazer alguns cálculos e extrair uma saída. Primeiro vamos importar as bibliotecas Qiskit,
+                pylatexenc e seus
+                pacotes associados.
+            </p>
+
+            <img class="size-img-collab" src="../img/content-img/import-libs.jpg" alt="import libs">
+
+            <p>
+                Em seguida, inicializaremos um registro quântico com 2 qubits. Um qubit é a unidade fundamental de um
+                circuito quântico, o análogo de um pouco na computação clássica! Também inicializaremos um registro
+                clássico com 2 qubits. A maioria dos circuitos será uma combinação de registros clássicos e quânticos,
+                como os registradores quânticos serão usados para realizar operações de mecânica quântica em qubits, e
+                registros clássicos serão usados para realizar operações clássicas nas medidas obtidas.
+            </p>
+
+            <img class="size-img-collab" src="../img/content-img/init-register.jpg" alt="init register">
+
+            <p>
+                No Qiskit, temos a opção de visualizar como o circuito quântico fica executando o seguinte comando:
+            </p>
+
+            <img class="size-img-collab" src="../img/content-img/draw1.png" alt="quantum circuit draw1">
+
+            <p>
+                Veremos dois bits quânticos e dois bits clássicos.
+                Veremos o efeito de aplicar um portão quântico em um único bit, o portão de Hadamard, que é um portão
+                usado para criar superposição.
+                Faremos isso executando o seguinte comando para o primeiro qubit no registro quântico. Observe que a
+                indexação começa a partir de 0 em Python.
+            </p>
+
+            <img class="size-img-collab" src="../img/content-img/draw2.png" alt="quantum circuit draw2">
+
+            <p>
+                Vamos explorar portões mais fundamentais, como o portão cx que é um portão x controlado, e o portão
+                executa um NÃO no qubit de destino se o qubit de controle estiver no estado 1. Por padrão, todos os
+                qubits são inicializados para o estado 0.
+                O qubit de controle é o primeiro parâmetro ou qr[0] neste caso e o parâmetro de destino é qr[1].
+                No circuito seguinte, o qubit alvo é um círculo com um sinal de adição e o controle é um ponto.
+            </p>
+
+            <img class="size-img-collab" src="../img/content-img/draw3.png" alt="quantum circuit draw3">
+
+            <p>
+                Este circuito é usado para implementar o emaranhamento entre dois qubits. Depois de inicializar um
+                circuito quântico e realizar computação implementando portas quânticas, extrairemos as saídas usando a
+                função .measure() no Qiskit. Neste exemplo, os bits clássicos serão usados para armazenar as saídas. As
+                setas apontam dos qubits, para os bits clássicos que são usados para armazenar as saídas extraídas.
+            </p>
+
+            <img class="size-img-collab" src="../img/content-img/draw4.png" alt="quantum circuit draw4">
+
+            <p>
+                E este foi basicamente o nosso primeiro "Hello World" na programação quântica!!
+            </p>
+
+            <iframe class="size-iframe" width="560" height="315"
+                src="https://www.youtube.com/embed/Jx7IuJMYtJM?si=qP-qVfZrDj34J1om" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <hr>
+
+            <p>Para mais informações sobre: </p>
+
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=RrUTwq5jKM4" target="_blank">Hello World — Programming on
+                        Quantum Computers Season 1 Ep 3</a></li>
+                <li><a href="https://www.qmunity.tech/tutorials/hello-world-in-qiskit" target="_blank">Hello World in
+                        Qiskit - Beginner</a></li>
+                <li><a href="https://qiskit.org/documentation/getting_started.html" target="_blank">Getting started with
+                        Qiskit</a></li>
+
+                <li><a
+                        href="https://medium.com/qiskit/an-introduction-to-quantum-natural-language-processing-7aa4cc73c674">An
+                        introduction to Quantum Natural Language Processing</a></li>
+
+                <li><a href="https://learn.microsoft.com/en-us/azure/quantum/overview-algebra-for-quantum-computing">Linear
+                        algebra for quantum computing</a></li>
+            </ul>
+
+        </section>
+
+        <aside class="side-content-navigation" id="side-bar">
+            <ul>
+                <li><a href="#sec1">Entendendo a Matemática por Trás da Computação Quântica</a></li>
+                <li><a href="#sec2">O Algoritmo Quântico</a></li>
+                <li><a href="#sec3">Como fazer o seu primeiro "Hello World" Quântico na Prática</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+</body>
+
+</html>
